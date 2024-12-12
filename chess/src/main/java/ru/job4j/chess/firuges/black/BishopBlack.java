@@ -30,7 +30,9 @@ public class BishopBlack implements Figure {
         int deltaX = position.getX() < dest.getX() ? 1 : -1;
         int deltaY = position.getY() < dest.getY() ? 1 : -1;
         for (int i = 0; i < size; i++) {
-            steps[i] = Cell.findBy(x + deltaX * (i + 1), y + deltaY * (i + 1));
+            x += deltaX;
+            y += deltaY;
+            steps[i] = Cell.findBy(x, y);
         }
         return steps;
     }
