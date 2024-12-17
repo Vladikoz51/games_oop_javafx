@@ -20,6 +20,8 @@ public class CatchBall extends Application {
         Scene scene = new Scene(canvas, 500, 500);
         Circle ball = new Circle(10, Color.RED);
         ball.setLayoutX(10);
+        ball.setLayoutX(10);
+        ball.setLayoutX(10);
         ball.setLayoutY(10);
         canvas.getChildren().add(ball);
         List<Circle> apples = generateApples();
