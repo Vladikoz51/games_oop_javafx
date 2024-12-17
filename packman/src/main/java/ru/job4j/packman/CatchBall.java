@@ -28,7 +28,7 @@ public class CatchBall extends Application {
         canvas.getChildren().addAll(apples);
         stage.setScene(scene);
         stage.show();
-        stage.setTitle("PackMan minimal");
+        stage.setTitle("PackMan minimal!!!");
     }
 
     private List<Circle> generateApples() {
